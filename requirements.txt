@@ -1,0 +1,13 @@
+# Evaluation dependencies (pinned for reproducibility)
+# Tested on Python 3.13
+pandas==2.3.1
+beautifulsoup4==4.15.0
+table-recognition-metric==0.0.6
+
+# This code parses HTML with the standard-library html.parser; lxml is still
+# installed, as a transitive dependency of table-recognition-metric.
+#
+# The converters that produce the predictions are NOT needed to run this
+# evaluator and are deliberately not pinned here:
+#   docling        local, open source; record the exact version you ran
+#   llama-parse    cloud API; record the processing tier and the run date
